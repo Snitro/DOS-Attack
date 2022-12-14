@@ -52,8 +52,6 @@ IP_PACK::IP_PACK(uint8_t protocol) : protocol(protocol) {
         perror("set socket option error");
         exit(1);
     }
-
-    addr.sin_family = AF_INET;
 }
 
 /**

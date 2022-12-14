@@ -16,8 +16,6 @@ class IP_PACK {
    public:
     IP_PACK(uint8_t protocol);
 
-    struct sockaddr_in addr;
-
     static unsigned short checksum(unsigned short* buffer, unsigned short size);
 
     void setBroadcastState(bool enable) {
@@ -41,8 +39,6 @@ class IP_PACK {
     int source_ip;  // 源网络地址
 
     uint8_t protocol;  // 协议类型
-
-    int mut;  // MTU
 };
 
 #endif

@@ -42,7 +42,6 @@ void SYN_Attack::start(in_addr_t dest, int port) {
     this->ip_pack.setBroadcastState(false);
 
     // 设置目标信息
-    addr.sin_port = htons(port);
     addr.sin_addr.s_addr = dest;
 
     // 伪首部
